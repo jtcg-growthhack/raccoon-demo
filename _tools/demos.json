@@ -256,5 +256,35 @@
     "name": "富士山マガジンサービス",
     "color": "#0055A5",
     "site_key": "rw_muREO2tK6MbyOtsk5NgeSgSL"
+  },
+  {
+    "slug": "tsurivision",
+    "name": "釣りビジョン",
+    "color": "#004EA2",
+    "site_key": "rw_dR6fpdCkreXVAxXmkHtBZ2iM"
+  },
+  {
+    "slug": "wantedly",
+    "name": "ウォンテッドリー",
+    "color": "#00A497",
+    "site_key": "rw_Uw37FKPLXJ6EnT4FwSEbbVeZ"
+  },
+  {
+    "slug": "housefoods",
+    "name": "ハウス食品",
+    "color": "#E60012",
+    "site_key": "rw_PNr1mc369nVbatMZ55QfVn2C"
+  },
+  {
+    "slug": "bizreach",
+    "name": "ビズリーチ",
+    "color": "#C72527",
+    "site_key": "rw_YxLPxTEgphXeomthqMLAxhwR"
+  },
+  {
+    "slug": "sodastream",
+    "name": "ソーダストリーム",
+    "color": "#00A3E0",
+    "site_key": "rw_QHAGXPjR4QKpmdKPPp0rnLIn"
   }
 ]

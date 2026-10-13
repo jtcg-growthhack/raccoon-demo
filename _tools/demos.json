@@ -286,5 +286,29 @@
     "name": "ソーダストリーム",
     "color": "#00A3E0",
     "site_key": "rw_QHAGXPjR4QKpmdKPPp0rnLIn"
+  },
+  {
+    "slug": "canon-its",
+    "name": "キヤノンITソリューションズ",
+    "color": "#CC0000",
+    "site_key": "rw_05JF1xsoW4qDWZNhAg5KUmsC"
+  },
+  {
+    "slug": "omron-social",
+    "name": "オムロンソーシアルソリューションズ",
+    "color": "#005BAC",
+    "site_key": "rw_I5tejkjctc2H61wfLUVTwrwZ"
+  },
+  {
+    "slug": "orix",
+    "name": "オリックス",
+    "color": "#003366",
+    "site_key": "rw_2NtfWRW5R1M8dhOthmLP6kzA"
+  },
+  {
+    "slug": "mizuho-trust",
+    "name": "みずほ信託銀行",
+    "color": "#002B66",
+    "site_key": "rw_a20vyefh7uoGcTkMvj5JSTgF"
   }
 ]

@@ -328,5 +328,17 @@
     "name": "西濃運輸",
     "color": "#004098",
     "site_key": "rw_dx71fIOaBjYBM4YfR5us6Ydy"
+  },
+  {
+    "slug": "kyoto-u",
+    "name": "京都大学",
+    "color": "#002147",
+    "site_key": "rw_QkzAxwWfTAwv5cke8fgZX7LT"
+  },
+  {
+    "slug": "nihon-u",
+    "name": "日本大学",
+    "color": "#C41230",
+    "site_key": "rw_p3SWHAK92ruBwbJomDXyC171"
   }
 ]

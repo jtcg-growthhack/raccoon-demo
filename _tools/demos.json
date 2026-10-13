@@ -1,3 +1,170 @@
 [
-  {"slug": "lixil", "name": "LIXIL", "color": "#00A0E9", "site_key": "rw_7DwKwyMLUxOF3aZzdYTSNZEL"}
+  {
+    "slug": "lixil",
+    "name": "LIXIL",
+    "color": "#00A0E9",
+    "site_key": "rw_7DwKwyMLUxOF3aZzdYTSNZEL"
+  },
+  {
+    "slug": "sony",
+    "name": "ソニー",
+    "color": "#000000",
+    "site_key": "rw_I6zu4tvxvIIhHU1xduwCShfR"
+  },
+  {
+    "slug": "toyota",
+    "name": "トヨタ",
+    "color": "#EB0A1E",
+    "site_key": "rw_sXSrjoq5eXV2We5jHDLfIgaR"
+  },
+  {
+    "slug": "nitori",
+    "name": "ニトリ",
+    "color": "#009E96",
+    "site_key": "rw_LKGgZBrElGcHr6VDQkKbBA8B"
+  },
+  {
+    "slug": "seven-eleven",
+    "name": "セブン-イレブン",
+    "color": "#008050",
+    "site_key": "rw_7aK7luILDkGiqyh233RsdGb6"
+  },
+  {
+    "slug": "kose",
+    "name": "コーセー",
+    "color": "#002B49",
+    "site_key": "rw_bSwAC6BT3M6qvEiZ0Mo1b5Yg"
+  },
+  {
+    "slug": "mercari",
+    "name": "メルカリ",
+    "color": "#E03C31",
+    "site_key": "rw_fFAliXgm9hasN77MhBy2NNF8"
+  },
+  {
+    "slug": "uniqlo",
+    "name": "ユニクロ",
+    "color": "#FF0000",
+    "site_key": "rw_9YvU5j9qc9zfCeCINJOHZIon"
+  },
+  {
+    "slug": "lawson",
+    "name": "ローソン",
+    "color": "#0068B7",
+    "site_key": "rw_Sziah96FuSDzjhke6nARxT9c"
+  },
+  {
+    "slug": "softbank",
+    "name": "ソフトバンク",
+    "color": "#C8C8C8",
+    "site_key": "rw_YvFcs07qKFvTKmzhvgIlGPKW"
+  },
+  {
+    "slug": "panasonic",
+    "name": "パナソニック",
+    "color": "#004098",
+    "site_key": "rw_0MB5R9aSslqheDbK87ebKI59"
+  },
+  {
+    "slug": "metlife",
+    "name": "メットライフ生命",
+    "color": "#009900",
+    "site_key": "rw_4uUbnn9MVAkzP09QPjWv7KO4"
+  },
+  {
+    "slug": "transcosmos",
+    "name": "トランスコスモス",
+    "color": "#003366",
+    "site_key": "rw_qQf5pSL8hNAdZZ4CWKmrgBTo"
+  },
+  {
+    "slug": "3m",
+    "name": "3M",
+    "color": "#FF0000",
+    "site_key": "rw_1IqfKQAJGPxrhQzbjY9p4U1I"
+  },
+  {
+    "slug": "ana",
+    "name": "ANA",
+    "color": "#002169",
+    "site_key": "rw_rgzTlKLRHIwWl7OOEkBozMz0"
+  },
+  {
+    "slug": "iij",
+    "name": "IIJ",
+    "color": "#002060",
+    "site_key": "rw_6BEg83Io5r61RT6Z4wRQlqDW"
+  },
+  {
+    "slug": "jal",
+    "name": "JAL",
+    "color": "#CC0000",
+    "site_key": "rw_CW13VmHHzp3ElkPTqAF7g7mm"
+  },
+  {
+    "slug": "kddi",
+    "name": "KDDI",
+    "color": "#E65518",
+    "site_key": "rw_Fd23LikuQlPpdyopsnG0CZuP"
+  },
+  {
+    "slug": "lineyahoo",
+    "name": "LINEヤフー",
+    "color": "#00C300",
+    "site_key": "rw_TYHI1plJB7OVMnUUrWUlfwvd"
+  },
+  {
+    "slug": "zozo",
+    "name": "ZOZO",
+    "color": "#000000",
+    "site_key": "rw_sI6JBmoQL2NUUFbGKbBCbV6e"
+  },
+  {
+    "slug": "smbc",
+    "name": "三井住友銀行",
+    "color": "#004730",
+    "site_key": "rw_ultgaOjiTJvhLF9oAjrTllJF"
+  },
+  {
+    "slug": "nintendo",
+    "name": "任天堂",
+    "color": "#E60012",
+    "site_key": "rw_UYTUAD17GFGWbDaApQxS4BI6"
+  },
+  {
+    "slug": "nta",
+    "name": "日本旅行",
+    "color": "#E60012",
+    "site_key": "rw_NN7lrGzJ9aAFNAAgvWdEgPOh"
+  },
+  {
+    "slug": "hoshinoresorts",
+    "name": "星野リゾート",
+    "color": "#1A1A1A",
+    "site_key": "rw_8j5n4T8QIYcTKCAXi070GXLj"
+  },
+  {
+    "slug": "rakuten",
+    "name": "楽天",
+    "color": "#BF0000",
+    "site_key": "rw_UJd65OJI30QUj2GZhGd1ASYv"
+  },
+  {
+    "slug": "muji",
+    "name": "無印良品",
+    "color": "#7F0019",
+    "site_key": "rw_YYDgRhcV6JJqziCv2JH2j4mJ"
+  },
+  {
+    "slug": "shiseido",
+    "name": "資生堂",
+    "color": "#A6192E",
+    "site_key": "rw_PrYRKYI0tM4nn19z3xpSPKjD"
+  },
+  {
+    "slug": "yamato",
+    "name": "ヤマト運輸",
+    "color": "#004020",
+    "site_key": "rw_VIe7ZXjOe4GkbXrSxMHJCS34"
+  }
 ]

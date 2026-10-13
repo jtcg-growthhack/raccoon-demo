@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Raccoon AI デモ｜任天堂 向け</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bar-h: 44px; --brand: #E60012; --brand-fg: #ffffff; }
+  html, body { margin: 0; height: 100%; background: #f5f6fa; font-family: "Noto Sans JP", system-ui, -apple-system, sans-serif; }
+  .demo-bar {
+    position: fixed; top: 0; left: 0; right: 0; height: var(--bar-h);
+    display: flex; align-items: center; gap: 10px; padding: 0 16px;
+    background: var(--brand); color: var(--brand-fg); font-size: 14px; z-index: 2147483001;
+  }
+  .demo-bar .tag { font-size: 11px; padding: 2px 8px; border: 1px solid currentColor; border-radius: 999px; }
+  .demo-bar .note { margin-left: auto; font-size: 11px; opacity: .75; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .status { position: fixed; inset: var(--bar-h) 0 0 0; display: flex; align-items: center; justify-content: center; color: #555; font-size: 14px; padding: 16px; text-align: center; }
+
+  /* Widget を全画面化：浮動ボタンは隠し、対話ウィンドウをバーの下いっぱいに広げる */
+  #raccoon-widget-button { display: none !important; }
+  #raccoon-widget-root { inset: 0 !important; bottom: 0 !important; pointer-events: none; }
+  #raccoon-widget-frame-wrap {
+    position: fixed !important; top: var(--bar-h) !important; left: 0 !important; right: 0 !important; bottom: 0 !important;
+    width: auto !important; height: auto !important; border-radius: 0 !important; box-shadow: none !important;
+  }
+  #raccoon-widget-root.rw-open #raccoon-widget-frame-wrap { pointer-events: auto; }
+  #raccoon-widget-frame { width: 100%; height: 100%; border: 0; display: block; }
+  /* PC：Widget 側の CSS が 400×650 固定のため、その原寸の iframe を中央に置いて高さいっぱいまで拡大する
+     （本体で全幅対応されたらこのブロックは削除してよい） */
+  .rw-scaled #raccoon-widget-frame-wrap { background: #eef1f6 !important; }
+  .rw-scaled #raccoon-widget-frame {
+    position: absolute; left: 50%; top: 50%; width: 400px; height: 650px;
+    transform-origin: center center; border-radius: 16px; box-shadow: 0 20px 48px rgba(20,37,114,.18); background: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="demo-bar">
+    <span class="tag">デモ</span>
+    <strong>Raccoon AI × 任天堂 向け AIカスタマーサポート</strong>
+    <span class="note">※ 本ページは提案用デモです（任天堂 公式サイトではありません）</span>
+  </div>
+  <div class="status" id="status">読み込み中…</div>
+
+<script>
+  // ここに WebWidgetConfig の site_key を入れる（rw_ で始まる値）
+  var SITE_KEY = "rw_UYTUAD17GFGWbDaApQxS4BI6";
+  var BASE = "https://app-jp.raccoonai.co";
+
+  (function () {
+    var status = document.getElementById("status");
+    if (!SITE_KEY || SITE_KEY.indexOf("__") === 0) {
+      status.textContent = "デモ準備中です。しばらくお待ちください。";
+      return;
+    }
+    var s = document.createElement("script");
+    s.src = BASE + "/widget/v1/raccoon-widget.js";
+    s.async = true;
+    s.setAttribute("data-site-key", SITE_KEY);
+    s.setAttribute("data-locale", "ja");
+    s.onload = function () {
+      if (window.RaccoonWidget) { window.RaccoonWidget.open(); status.textContent = ""; fit(); }
+    };
+    s.onerror = function () { status.textContent = "読み込みに失敗しました。ページを再読み込みしてください。"; };
+    document.body.appendChild(s);
+
+    // 480px 以下はスマホ表示（Widget 側が全幅になる）、それ以上は原寸 iframe を拡大表示
+    function fit() {
+      var f = document.getElementById("raccoon-widget-frame");
+      if (!f) return;
+      var barH = 44, pad = 24;
+      if (window.innerWidth <= 480) {
+        document.documentElement.classList.remove("rw-scaled");
+        f.style.transform = "";
+        return;
+      }
+      document.documentElement.classList.add("rw-scaled");
+      var k = Math.min((window.innerHeight - barH - pad * 2) / 650, (window.innerWidth - pad * 2) / 400);
+      k = Math.max(0.6, Math.min(k, 2));
+      f.style.transform = "translate(-50%, -50%) scale(" + k + ")";
+    }
+    window.addEventListener("resize", fit);
+
+    // ウィンドウ内の「閉じる」が押されても全画面デモなので開き直す
+    window.addEventListener("message", function (e) {
+      if (e.origin !== BASE) return;
+      if (e.data && e.data.type === "raccoon-widget:close") {
+        setTimeout(function () { window.RaccoonWidget && window.RaccoonWidget.open(); }, 0);
+      }
+    });
+  })();
+</script>
+</body>
+</html>

@@ -7,14 +7,14 @@
 <title>Raccoon AI デモ｜{{NAME}} 向け</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <style>
-  :root { --bar-h: 44px; --brand: {{COLOR}}; }
+  :root { --bar-h: 44px; --brand: {{COLOR}}; --brand-fg: {{FG}}; }
   html, body { margin: 0; height: 100%; background: #f5f6fa; font-family: "Noto Sans JP", system-ui, -apple-system, sans-serif; }
   .demo-bar {
     position: fixed; top: 0; left: 0; right: 0; height: var(--bar-h);
     display: flex; align-items: center; gap: 10px; padding: 0 16px;
-    background: var(--brand); color: #fff; font-size: 14px; z-index: 2147483001;
+    background: var(--brand); color: var(--brand-fg); font-size: 14px; z-index: 2147483001;
   }
-  .demo-bar .tag { font-size: 11px; padding: 2px 8px; border: 1px solid rgba(255,255,255,.6); border-radius: 999px; }
+  .demo-bar .tag { font-size: 11px; padding: 2px 8px; border: 1px solid currentColor; border-radius: 999px; }
   .demo-bar .note { margin-left: auto; font-size: 11px; opacity: .75; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .status { position: fixed; inset: var(--bar-h) 0 0 0; display: flex; align-items: center; justify-content: center; color: #555; font-size: 14px; padding: 16px; text-align: center; }
 

@@ -310,5 +310,23 @@
     "name": "みずほ信託銀行",
     "color": "#002B66",
     "site_key": "rw_a20vyefh7uoGcTkMvj5JSTgF"
+  },
+  {
+    "slug": "denso-wave",
+    "name": "デンソーウェーブ",
+    "color": "#E60012",
+    "site_key": "rw_PgNS9xK8fYPIl5F9E7SnIgoz"
+  },
+  {
+    "slug": "learningbox",
+    "name": "learningBOX",
+    "color": "#1C75BC",
+    "site_key": "rw_aOF2z5Hyu0IclkewPpcKWndq"
+  },
+  {
+    "slug": "seino",
+    "name": "西濃運輸",
+    "color": "#004098",
+    "site_key": "rw_dx71fIOaBjYBM4YfR5us6Ydy"
   }
 ]

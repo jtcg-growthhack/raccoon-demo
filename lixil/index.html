@@ -27,6 +27,13 @@
   }
   #raccoon-widget-root.rw-open #raccoon-widget-frame-wrap { pointer-events: auto; }
   #raccoon-widget-frame { width: 100%; height: 100%; border: 0; display: block; }
+  /* PC：Widget 側の CSS が 400×650 固定のため、その原寸の iframe を中央に置いて高さいっぱいまで拡大する
+     （本体で全幅対応されたらこのブロックは削除してよい） */
+  .rw-scaled #raccoon-widget-frame-wrap { background: #eef1f6 !important; }
+  .rw-scaled #raccoon-widget-frame {
+    position: absolute; left: 50%; top: 50%; width: 400px; height: 650px;
+    transform-origin: center center; border-radius: 16px; box-shadow: 0 20px 48px rgba(20,37,114,.18); background: #fff;
+  }
 </style>
 </head>
 <body>
@@ -54,10 +61,27 @@
     s.setAttribute("data-site-key", SITE_KEY);
     s.setAttribute("data-locale", "ja");
     s.onload = function () {
-      if (window.RaccoonWidget) { window.RaccoonWidget.open(); status.textContent = ""; }
+      if (window.RaccoonWidget) { window.RaccoonWidget.open(); status.textContent = ""; fit(); }
     };
     s.onerror = function () { status.textContent = "読み込みに失敗しました。ページを再読み込みしてください。"; };
     document.body.appendChild(s);
+
+    // 480px 以下はスマホ表示（Widget 側が全幅になる）、それ以上は原寸 iframe を拡大表示
+    function fit() {
+      var f = document.getElementById("raccoon-widget-frame");
+      if (!f) return;
+      var barH = 44, pad = 24;
+      if (window.innerWidth <= 480) {
+        document.documentElement.classList.remove("rw-scaled");
+        f.style.transform = "";
+        return;
+      }
+      document.documentElement.classList.add("rw-scaled");
+      var k = Math.min((window.innerHeight - barH - pad * 2) / 650, (window.innerWidth - pad * 2) / 400);
+      k = Math.max(0.6, Math.min(k, 2));
+      f.style.transform = "translate(-50%, -50%) scale(" + k + ")";
+    }
+    window.addEventListener("resize", fit);
 
     // ウィンドウ内の「閉じる」が押されても全画面デモなので開き直す
     window.addEventListener("message", function (e) {

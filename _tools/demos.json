@@ -166,5 +166,95 @@
     "name": "ヤマト運輸",
     "color": "#004020",
     "site_key": "rw_VIe7ZXjOe4GkbXrSxMHJCS34"
+  },
+  {
+    "slug": "rakuten-mobile",
+    "name": "楽天モバイル",
+    "color": "#BF0000",
+    "site_key": "rw_eY79Y4W8lagtPo4U2L8NEetP"
+  },
+  {
+    "slug": "rakuten-car",
+    "name": "楽天Car",
+    "color": "#BF0000",
+    "site_key": "rw_JsvoeJBsTHQtIPaT8PCcU7Ch"
+  },
+  {
+    "slug": "biglobe",
+    "name": "BIGLOBE",
+    "color": "#0090D6",
+    "site_key": "rw_q3LExlH94dETZ8Q2nVog0SIg"
+  },
+  {
+    "slug": "aplus",
+    "name": "アプラス",
+    "color": "#004098",
+    "site_key": "rw_j7D08bCBflMDJST2BqjHjY27"
+  },
+  {
+    "slug": "tobu-top-tours",
+    "name": "東武トップツアーズ",
+    "color": "#003366",
+    "site_key": "rw_CdXL2CrQHGMNmqnblInAaFlE"
+  },
+  {
+    "slug": "mizuho",
+    "name": "みずほ銀行",
+    "color": "#002060",
+    "site_key": "rw_wMZM15Mia7071SQ7E8diDY2U"
+  },
+  {
+    "slug": "daiei",
+    "name": "ダイエー",
+    "color": "#FF6600",
+    "site_key": "rw_63CD2QDnzw3CYTcWiQTYcXIg"
+  },
+  {
+    "slug": "adastria",
+    "name": "アダストリア",
+    "color": "#111111",
+    "site_key": "rw_rGaN57U5O6JdZ87Zev68SEgT"
+  },
+  {
+    "slug": "hotpepper",
+    "name": "リクルート（ホットペッパーグルメ）",
+    "color": "#FF0033",
+    "site_key": "rw_pGXgQ2iVzGnTIEPNpwFAzup5"
+  },
+  {
+    "slug": "mynavi",
+    "name": "マイナビ",
+    "color": "#0099FF",
+    "site_key": "rw_iZf3kCcC9GOYTV5aTyznrxo6"
+  },
+  {
+    "slug": "vitabrid",
+    "name": "ビタブリッドジャパン",
+    "color": "#E95513",
+    "site_key": "rw_yYMEqDEtlVV8qQA8VSU0JVUU"
+  },
+  {
+    "slug": "base",
+    "name": "BASE",
+    "color": "#00A389",
+    "site_key": "rw_93a6xgJGZ3NetfIahU4ot1d0"
+  },
+  {
+    "slug": "newt",
+    "name": "令和トラベル（NEWT）",
+    "color": "#00B5B5",
+    "site_key": "rw_cwXza4hMue7zeipQSDrhixQJ"
+  },
+  {
+    "slug": "alphatheta",
+    "name": "AlphaTheta",
+    "color": "#0052FF",
+    "site_key": "rw_2cFxOaMBEKapgsZQcUdmG7GB"
+  },
+  {
+    "slug": "fujisan",
+    "name": "富士山マガジンサービス",
+    "color": "#0055A5",
+    "site_key": "rw_muREO2tK6MbyOtsk5NgeSgSL"
   }
 ]

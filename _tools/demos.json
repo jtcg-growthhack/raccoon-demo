@@ -340,5 +340,23 @@
     "name": "日本大学",
     "color": "#C41230",
     "site_key": "rw_p3SWHAK92ruBwbJomDXyC171"
+  },
+  {
+    "slug": "note",
+    "name": "note",
+    "color": "#2CB696",
+    "site_key": "rw_xZgx6nZqQt5XbHxDA4XbBSOr"
+  },
+  {
+    "slug": "diptyque",
+    "name": "Diptyque Japan",
+    "color": "#000000",
+    "site_key": "rw_6C89j5SrMJf67jEoROCTHHZY"
+  },
+  {
+    "slug": "omron",
+    "name": "オムロン ヘルスケア",
+    "color": "#005BAC",
+    "site_key": "rw_DlAtsIqWR8XvW2i8BpAmTSWC"
   }
 ]
